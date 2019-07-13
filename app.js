@@ -17,6 +17,7 @@ confirmBtn.addEventListener('click', () => {
     const enteredReason = reasonInput.value;
     const enteredAmount = amountInput.value;
     if (enteredReason.trim().lenght <= 0 || enteredAmount <= 0 || enteredAmount.trim().lenght <= 0) {
+        alert('invalid values');
         return;
     }
     const newItem = document.createElement('ion-item');
